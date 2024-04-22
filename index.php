@@ -12,6 +12,11 @@ $data=[
 "twitter"=>"https://twitter.com/SafaaMagdy69799",
 "linkedin"=>"https://www.linkedin.com/in/safaa-magdy-aa7381234/"
 ];
+$education=[
+  "collage"=>["name"=>"Al-Azhar University","degree"=>"Bachelor of Engineering","department"=>"Computer & Systems engineering","year"=>"August 2023 - May 2018","gpa"=>" Excellent with honors"],
+  "highSchool"=>["name"=>"Bilkas Kames High School", "degree"=>"High School","year"=>"August 2018 - May 2015","gpa"=>"94%"],
+  "PrimarySchool"=>["name"=>"Bilkas Kames Primary School", "degree"=>"Primary School","year"=>"August 2015 - May 2012","gpa"=>"91%"],
+];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -140,38 +145,38 @@ $data=[
               ></a>
             </div>
           </div>
-          <div class="row h-100 flex-column" id="education">
+<div class="row h-100 flex-column" id="education">
             <h2 class="text-gray display-3 fw-bold mt-5">Education</h2>
             <section class="my-3 mx-2">
-              <h4 class="fw-bold text-gray"> Al-Azhar University</h4>
+              <h4 class="fw-bold text-gray"> "<?php echo $education['collage']['name'] ?></h4>
               <div class="d-flex justify-content-between">
                 <h5 class="fw-bold text-gray opacity-75">
-                  Bachelor of Engineering
+                <?php echo $education['collage']['degree'] ?>
                 </h5>
-                <p class="me-5 text-gray">August 2023 - May 2018</p>
+                <p class="me-5 text-gray"><?php echo $education['collage']['year'] ?></p>
               </div>
-              <p class="mb-0">Computer & Systems engineering</p>
-              <p class="mb-0">GPA: Excellent with honors</p>
+              <p class="mb-0"><?php echo $education['collage']['department'] ?></p>
+              <p class="mb-0">GPA: <?php echo $education['collage']['gpa'] ?></p>
             </section>
             <hr class="w-75 mx-auto" />
             <section class="my-3 mx-2">
-              <h4 class="fw-bold text-gray">Bilkas Kames High School</h4>
+              <h4 class="fw-bold text-gray"><?php echo $education['highSchool']['name'] ?></h4>
               <div class="d-flex justify-content-between">
-                <h5 class="fw-bold text-gray opacity-75">High School</h5>
-                <p class="me-5 text-gray">August 2018 - May 2015</p>
+                <h5 class="fw-bold text-gray opacity-75"><?php echo $education['highSchool']['degree'] ?></h5>
+                <p class="me-5 text-gray"><?php echo $education['highSchool']['year'] ?></p>
               </div>
-              <p class="mb-0">GPA: 94%</p>
+              <p class="mb-0">GPA: <?php echo $education['highSchool']['gpa'] ?></p>
             </section>
             <hr class="w-75 mx-auto" />
             <section class="my-3 mx-2">
-              <h4 class="fw-bold text-gray">Bilkas Kames Primary School</h4>
+              <h4 class="fw-bold text-gray"><?php echo $education['PrimarySchool']['name'] ?></h4>
               <div class="d-flex justify-content-between">
-                <h5 class="fw-bold text-gray opacity-75">Primary School</h5>
-                <p class="me-5 text-gray">August 2015 - May 2012</p>
+                <h5 class="fw-bold text-gray opacity-75"><?php echo $education['PrimarySchool']['degree'] ?></h5>
+                <p class="me-5 text-gray"><?php echo $education['PrimarySchool']['year'] ?></p>
               </div>
-              <p class="mb-0">GPA: 91%</p>
+              <p class="mb-0">GPA: <?php echo $education['PrimarySchool']['gpa'] ?></p>
             </section>
-          </div>
+          </div>           
           <div class="row h-100 flex-column" id="skills">
             <h2 class="text-gray display-3 fw-bold mt-5">Skills</h2>
             <h4 class="fw-bold text-gray opacity-75 mt-5">SKILLS</h4>
