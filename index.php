@@ -123,7 +123,7 @@ $education=[
             </h1>
             <div class="subheading mb-3 fw-bold text-gray">
               <?php echo $data['address'] ?>  , <?php echo $data['phone'] ?> ,  
-              <a href="<?php echo $data['email'] ?>" class="text-main"
+              <a href="mailto: <?php echo $data['email'] ?>" class="text-main"
                 ><?php echo $data['email'] ?></a
               >
             </div>
